@@ -116,7 +116,7 @@ analytics:
 # Site Author
 author:
   name             : "Muumthf"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/아이콘.jpg"
   bio              : "Tech Blog"
   location         : "Somewhere"
   email            :
