@@ -1,0 +1,63 @@
+---
+---
+
+/* Head */
+
+@font-face {
+  font-family: 'Hyundai Sans Head';
+  src: url('/assets/fonts/HYUNDAISANSHEADPRO-LIGHT.TTF') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Hyundai Sans Head';
+  src: url('/assets/fonts/HYUNDAISANSHEADPRO-REGULAR.TTF') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Hyundai Sans Head';
+  src: url('/assets/fonts/HYUNDAISANSHEADPRO-MEDIUM.TTF') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Hyundai Sans Head';
+  src: url('/assets/fonts/HYUNDAISANSHEADPRO-BOLD.TTF') format('truetype');
+  font-weight: 700;
+}
+
+/* Text */
+
+@font-face {
+  font-family: 'Hyundai Sans Text';
+  src: url('/assets/fonts/HYUNDAISANSTEXTPRO-REGULAR.TTF') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Hyundai Sans Text';
+  src: url('/assets/fonts/HYUNDAISANSTEXTPRO-MEDIUM.TTF') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Hyundai Sans Text';
+  src: url('/assets/fonts/HYUNDAISANSTEXTPRO-BOLD.TTF') format('truetype');
+  font-weight: 700;
+}
+
+/* 적용 */
+
+body {
+  font-family: 'Hyundai Sans Text', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Hyundai Sans Head', sans-serif;
+}
