@@ -65,7 +65,8 @@ $topbar-height: 3rem !default;
 $search-max-width: 200px !default;
 $footer-height: 5rem !default;
 $footer-height-large: 6rem !default;
-$main-content-max-width: 1250px !default;
+
+$main-content-max-width: 1400px !default;
 
 $radius-sm: 6px !default;
 $radius-lg: 10px !default;
@@ -74,7 +75,7 @@ $back2top-size: 2.75rem !default;
 
 /* code block */
 
-$code-font-size: 0.95rem !default;
+$code-font-size: 1rem !default;
 $code-header-height: 2.25rem !default;
 $code-dot-size: 0.75rem !default;
 $code-dot-gap: 0.5rem !default;
@@ -89,18 +90,59 @@ $font-family-base: 'Hyundai Sans Text', 'Source Sans Pro', sans-serif !default;
 $font-family-heading: 'Hyundai Sans Head', Lato, sans-serif !default;
 
 /* =========================
+   Global Width Override
+========================= */
+
+#main-wrapper > .container,
+#topbar-wrapper > .container,
+#tail-wrapper > .container {
+  max-width: 92% !important;
+}
+
+#post-wrapper,
+.content {
+  max-width: 100% !important;
+}
+
+/* =========================
+   Avatar Fix
+========================= */
+
+#avatar {
+  padding: 0 !important;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#avatar img {
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: contain !important;
+  object-position: center center !important;
+
+  transform: scale(1.08) translateY(2px);
+
+  background: transparent !important;
+}
+
+/* =========================
    Global Typography
 ========================= */
 
 html {
-  font-size: 17px;
+  font-size: 18.8px !important;
   scroll-behavior: smooth;
 }
 
 body {
+  font-size: 1.03rem !important;
   font-family: 'Hyundai Sans Text', sans-serif;
   font-weight: 400;
-  line-height: 1.85;
+  line-height: 1.9;
   letter-spacing: -0.015em;
 }
 
@@ -121,19 +163,19 @@ h6 {
 }
 
 h1 {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
 }
 
 h2 {
-  font-size: 2.1rem;
+  font-size: 2.25rem;
 }
 
 h3 {
-  font-size: 1.7rem;
+  font-size: 1.85rem;
 }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 /* =========================
@@ -141,16 +183,28 @@ h4 {
 ========================= */
 
 .post-content {
-  font-size: 1.08rem;
-  line-height: 1.95;
+  font-size: 1.12rem !important;
+  line-height: 2 !important;
 }
 
 .post-content p {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.3rem;
 }
 
 .post-content li {
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.4rem;
+}
+
+/* =========================
+   Typography Inheritance
+========================= */
+
+p,
+li,
+span,
+td,
+th {
+  font-size: inherit;
 }
 
 /* =========================
@@ -164,7 +218,7 @@ h4 {
 #sidebar .site-title {
   font-family: 'Hyundai Sans Head', sans-serif;
   font-weight: 700;
-  font-size: 1.35rem;
+  font-size: 1.45rem;
 }
 
 /* =========================
@@ -182,7 +236,7 @@ h4 {
 code,
 pre,
 .highlight {
-  font-size: 0.95rem;
+  font-size: 0.98rem;
   border-radius: 10px;
 }
 
@@ -191,7 +245,7 @@ pre,
 ========================= */
 
 table {
-  font-size: 0.97rem;
+  font-size: 0.98rem;
 }
 
 /* =========================
@@ -200,23 +254,27 @@ table {
 
 @media all and (max-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 16.5px !important;
+  }
+
+  body {
+    font-size: 1rem !important;
   }
 
   .post-content {
-    font-size: 1.02rem;
-    line-height: 1.9;
+    font-size: 1.05rem !important;
+    line-height: 1.95 !important;
   }
 
   h1 {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 1.95rem;
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.65rem;
   }
 }

@@ -1,0 +1,39 @@
+/* =========================
+   Global Width Override
+========================= */
+
+#main-wrapper > .container,
+#topbar-wrapper > .container,
+#tail-wrapper > .container {
+  max-width: 92% !important;
+}
+
+#post-wrapper,
+.content {
+  max-width: 100% !important;
+}
+
+/* =========================
+   Avatar Fix
+========================= */
+
+#avatar {
+  padding: 0 !important;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#avatar img {
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: contain !important;
+  object-position: center center !important;
+
+  transform: scale(1.08) translateY(2px);
+
+  background: transparent !important;
+}
