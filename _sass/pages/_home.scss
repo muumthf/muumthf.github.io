@@ -60,7 +60,7 @@
 
       .card-text {
         @include bp.md {
-          display: inherit !important;
+          display: none !important;
         }
 
         &.content {

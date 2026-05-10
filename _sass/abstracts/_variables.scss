@@ -1,3 +1,7 @@
+/* =========================
+   Hyundai Font Faces
+========================= */
+
 @font-face {
   font-family: 'Hyundai Sans Head';
   src: url('/assets/fonts/HYUNDAISANSHEADPRO-LIGHT.TTF') format('truetype');
@@ -22,7 +26,9 @@
   font-weight: 700;
 }
 
-/* Text */
+/* =========================
+   Hyundai Text Fonts
+========================= */
 
 @font-face {
   font-family: 'Hyundai Sans Text';
@@ -42,6 +48,10 @@
   font-weight: 700;
 }
 
+/* =========================
+   Chirpy Variables
+========================= */
+
 /* sidebar */
 
 $sidebar-width: 260px !default;
@@ -49,27 +59,164 @@ $sidebar-width-large: 300px !default;
 $sb-btn-gap: 0.8rem !default;
 $sb-btn-gap-lg: 1rem !default;
 
-/* other framework sizes */
+/* framework */
 
 $topbar-height: 3rem !default;
 $search-max-width: 200px !default;
 $footer-height: 5rem !default;
 $footer-height-large: 6rem !default;
 $main-content-max-width: 1250px !default;
+
 $radius-sm: 6px !default;
 $radius-lg: 10px !default;
+
 $back2top-size: 2.75rem !default;
 
-/* syntax highlight */
+/* code block */
 
-$code-font-size: 0.85rem !default;
+$code-font-size: 0.95rem !default;
 $code-header-height: 2.25rem !default;
 $code-dot-size: 0.75rem !default;
 $code-dot-gap: 0.5rem !default;
 $code-icon-width: 1.75rem !default;
 
-/* fonts */
+/* =========================
+   Font Families
+========================= */
 
 $font-family-base: 'Hyundai Sans Text', 'Source Sans Pro', sans-serif !default;
 
 $font-family-heading: 'Hyundai Sans Head', Lato, sans-serif !default;
+
+/* =========================
+   Global Typography
+========================= */
+
+html {
+  font-size: 17px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Hyundai Sans Text', sans-serif;
+  font-weight: 400;
+  line-height: 1.85;
+  letter-spacing: -0.015em;
+}
+
+/* =========================
+   Headings
+========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Hyundai Sans Head', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.35;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 2.1rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+/* =========================
+   Post Content
+========================= */
+
+.post-content {
+  font-size: 1.08rem;
+  line-height: 1.95;
+}
+
+.post-content p {
+  margin-bottom: 1.2rem;
+}
+
+.post-content li {
+  margin-bottom: 0.35rem;
+}
+
+/* =========================
+   Sidebar
+========================= */
+
+#sidebar {
+  font-family: 'Hyundai Sans Text', sans-serif;
+}
+
+#sidebar .site-title {
+  font-family: 'Hyundai Sans Head', sans-serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+}
+
+/* =========================
+   Topbar
+========================= */
+
+#topbar {
+  font-family: 'Hyundai Sans Text', sans-serif;
+}
+
+/* =========================
+   Code Block
+========================= */
+
+code,
+pre,
+.highlight {
+  font-size: 0.95rem;
+  border-radius: 10px;
+}
+
+/* =========================
+   Tables
+========================= */
+
+table {
+  font-size: 0.97rem;
+}
+
+/* =========================
+   Mobile Optimization
+========================= */
+
+@media all and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  .post-content {
+    font-size: 1.02rem;
+    line-height: 1.9;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
